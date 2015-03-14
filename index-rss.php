@@ -63,6 +63,7 @@ for($i=0; $i<count($files); $i++) {
 		echo "		<title>". $files[$i]['name'] ."</title>\n";
 		echo "		<link>". $feedBaseURL . $files[$i]['name'] . "</link>\n";
 		echo "		<pubDate>". date("D M j G:i:s T Y", $files[$i]['timestamp']) ."</pubDate>\n";
+		echo '		<guid isPermalink="true">'. $feedBaseURL . $files[$i]['name'] . '</guid>\n';
 		echo "    </item>\n";
 	}
 }
