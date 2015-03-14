@@ -25,13 +25,14 @@
 
 */
 
+// Change this according to your folder and content. 
+// TODO: Automatic fallback defaults
 $feedName = "Index of /movies";
 $feedDesc = "This is a list of all the movies available for download in this folder.";
 $feedURL = "http://localhost/movies";
 $feedBaseURL = "http://localhost/movies/"; // must end in trailing forward slash (/).
 
 $allowed_ext = ".MPG,.AVI,.RMVB,.MOV";
-
 
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'Mozilla' ) {
 	$header = 'Content-Type: text/xml;'
