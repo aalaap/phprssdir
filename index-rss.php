@@ -32,7 +32,7 @@ $feedBaseURL = "http://localhost/movies/"; // must end in trailing forward slash
 
 $allowed_ext = ".MPG,.AVI,.RMVB,.MOV";
 
-?><<?= '?'; ?>xml version="1.0"<?= '?'; ?>>
+?><<?= '?'; ?>xml version="1.0"<?= '?'; ?> encoding="utf-8">
 <rss version="2.0">
 	<channel>
 		<title><?=$feedName?></title>
