@@ -32,6 +32,15 @@ $feedBaseURL = "http://localhost/movies/"; // must end in trailing forward slash
 
 $allowed_ext = ".MPG,.AVI,.RMVB,.MOV";
 
+
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'Mozilla' ) {
+	$header = 'Content-Type: text/xml;'
+} else {
+	$header = 'Content-Type: application/rss+xml;'
+}
+
+header($header . ' charset=UTF-8;')
+
 ?><<?= '?'; ?>xml version="1.0"<?= '?'; ?> encoding="utf-8">
 <rss version="2.0">
 	<channel>
